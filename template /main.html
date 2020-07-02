@@ -16,10 +16,10 @@
                 <image class = 'logo' src='photos/icons/logo.png' alt='logo'/>
             </a>
             <div class='menu-links'>
-                <a href='main.html'>HOME</a>
-                <a href='shop.html'>SHOP</a>
-                <a href='about.html'>ABOUT</a>
-                <a href= 'faq.html'>FAQ</a>
+                <a class='nav-link' href='main.html'>HOME</a>
+                <a class='nav-link' href='shop.html'>SHOP</a>
+                <a class='nav-link' href='about.html'>ABOUT</a>
+                <a class='nav-link' href= 'faq.html'>FAQ</a>
             </div>
             <div class='shopping-cart-login'>
                 <a href='login.html'>LOG IN</a>
@@ -41,85 +41,121 @@
 
             <div class = 'how-it-works'>
                 <div class='works-info'>
-                    <h1 class='cap-font'>
-                        indulge your skin and lift your mood with one of life's simple pleasures...</h1>
+                    <h2 class='cap-font'>
+                        indulge your skin and lift your mood with one of life's simple pleasures...</h2>
                     <p class='inner-text'>Settle in for a good soak exploding with essential oils and tons of fizzy fun. 
                         Whether you're after a relaxing or petal-laden floral soak  there's
                         a bath bomb perfect for every bathing experience</p>
 
-                    <h1 class='cap-font'>
+                    <h2 class='cap-font'>
                         how it works
-                    </h1>
+                    </h2>
                 </div>
                 <div class='order-display'>
-                    <div ><img class='order'src='photos/display-photos/order.png' /></div>
-                    <div ><img class='shipping'src='photos/display-photos/shipping.png' /></div>
-                    <div ><img class='cancel'src='photos/display-photos/cancel.png' /></div>
+                    <div class='order'>
+                        <p class='description'>1.&nbsp; Each month we curate a set
+                            of 6 luxury bath bombs 
+                            based on the season .</p>
+                        <img id='order' src='photos/icons/bath-bombs.png'/>
+                    </div>
+                    <div class='order'>
+                        <p class='description'>2. &nbsp; On the 15th of every   
+                            month we package your    
+                            ordrer and shipit to you.</p>
+                        <img id='order' src='photos/icons/shippingLove.png'/>
+                    </div>
+                    <div class='order'>
+                        <p class='description'>3. &nbsp; You can pause or 
+                            cancel  your subscription
+                            at any time. Billed  monhly.</p>
+                        <img id='order' src='photos/icons/chat-box.png'/>
+                    </div>
                     <div></div>
                 </div>
             </div>
 
             <div class='past-box-reveal'>
                 <div class='works-info'>
-                    <h1 class=cap-font>july box reveal </h1>
+                    <h2 class=cap-font>july box reveal </h2>
                 </div>
                 <div class='past-bombs'>
-                    <div class='bomb1'>
-                        <div style="padding:0; text-align:center">
-                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 80%" />
+                    <div id='bomb' class='bomb1'>
+                        <div style="padding:0; align-self:center">
+                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 12rem"  />
                         </div>
-                        <div style="padding:0; text-align:center">
-                            <h3>Lavender Bliss</h3>
-                            <p>
+                        <div style="padding:0; align-self:center">
+                            <h4 class='cap-font'>lavender bliss</h4>
+                            <p class='description'>
                                 French lavender essential oils and flowers
                             </p>
-                            <p>Promote relaxation and  serenity</p>
+                            <p class='description'> Promote relaxation and  serenity</p>
                         </div>
                     </div>
-                    <div class='bomb2'>
-                        <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 25%" />
-                        <h3>Lavender Bliss</h3>
-                        <p>
-                            French lavender essential oils and flowers
-                        </p>
-                        <p>Promote relaxation and  serenity</p>
-                    </div>
-                    <div class='bomb3'>
-                        <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 25%" />
-                        <h3>Lavender Bliss</h3>
-                        <p>
-                            French lavender essential oils and flowers
-                        </p>
-                        <p>Promote relaxation and  serenity</p>
-                    </div>
-                    <div class='bomb4'>
-                        <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 25%" />
-                        <h3>Lavender Bliss</h3>
-                        <p>
-                            French lavender essential oils and flowers
-                        </p>
-                        <p>Promote relaxation and  serenity</p>
-                    </div>
-                    <div class='bomb5'>
-                        <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 25%" />
-                        <h3>Lavender Bliss</h3>
-                        <p>
-                            French lavender essential oils and flowers
-                        </p>
-                        <p>Promote relaxation and  serenity</p>
-                    </div>
-                    <div class='bomb6'>
-                        <div style="padding:0; text-align:center">
-                            <h3>Lavender Bliss</h3>
-                            <p>
+                    <div id='bomb' class='bomb2'>
+                        <div style="align-self: center" >
+                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 10rem" />
+                            </div>
+                            <div style="align-self:start">
+                            <h4 class='cap-font2'>lavender bliss</h4>
+                            <p class='description'>
                                 French lavender essential oils and flowers
                             </p>
-                            <p>Promote relaxation and  serenity</p>
-                        </div>
-                        <div style="padding:0; text-align:center">
-                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 80%" />
+                            <p class='description'>Promote relaxation and  serenity</p>
                         </div>
                     </div>
+                    <div id='bomb' class='bomb3'>
+                        <div style="align-self: center" >
+                        <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 10rem" />
+                        </div>
+                        <div style="align-self:start">
+                        <h4 class='cap-font2'>lavender bliss</h4>
+                        <p class='description'>
+                            French lavender essential oils and flowers
+                        </p>
+                        <p class='description'>Promote relaxation and  serenity</p>
+                        </div>
+                    </div>
+                    <div id='bomb' class='bomb4'>
+                        <div style="align-self: center" >
+                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 10rem" />
+                        </div>
+                        <div style="align-self:start">
+                            <h4 class='cap-font2'>lavender bliss</h4>
+                            <p class='description'>
+                                French lavender essential oils and flowers
+                            </p>
+                            <p class='description'>Promote relaxation and  serenity</p>
+                        </div>
+                    
+                    </div>
+                    <div id='bomb' class='bomb5'>
+                        <div style="align-self: center" >
+                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 10rem" />
+                        </div>
+                        <div style="align-self:center">
+                            <h4 class='cap-font2'>lavender bliss</h4>
+                            <p class='description'>
+                                French lavender essential oils and flowers
+                            </p>
+                            <p class='description'>Promote relaxation and  serenity</p>
+                        </div>
+                    
+                    </div>
+                    <div id='bomb'class='bomb6'>
+                        <div style="padding:0; align-self:center">
+                            <h4 class='cap-font'>lavender bliss</h4>
+                            <p class='description'>
+                                French lavender essential oils and flowers
+                            </p>
+                            <p class='description'>Promote relaxation and  serenity</p>
+                        </div>
+                        <div style="padding:0; align-self:center">
+                            <img src='photos/bath-bombs/bigblue.png' alt='bath-bomb' style="width: 12rem" />
+                        </div>
+                    </div>
+                </div>
+                <div class='action-button'>
+                    <button class='subscribe'>subscribe</button>
                 </div>
 
             </div>

@@ -4,7 +4,7 @@ html {
 }
 
 body{
-    font: 1.6rem  'Poiret One', Helvetica;
+    font: 2rem  'Poiret One', Helvetica;
     height: 100vh;
     margin: 0;
 }
@@ -13,10 +13,14 @@ body{
     color:rgba(152, 99, 198, 0.7); 
   
 }
-.inner-text{
-    font-size: 2rem;
+.cap-font2{
+    font-family: 'Major Mono Display', monospace; 
+    color:rgba(152, 99, 198, 0.7); 
+    margin-top: 0; 
 }
-
+.inner-text{
+    font-size: 2.5rem;
+}
 .grid-container{
     display: grid; 
     grid-template-areas: 
@@ -25,7 +29,7 @@ body{
     "footer"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-rows: 7rem 1fr 5rem;
     height: 90%
 }
 .header{
@@ -50,15 +54,15 @@ body{
 }
 .menu-links a{
     text-decoration: none;
-    color: gray;
+    color:black;
     padding-left: 3.5em;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
-
-.menu-links a:hover{
+.menu-links a:hover {
     color: purple;
 }
-.login{
+.login {
     text-decoration: none;
     color: gray;
     font-size: 1rem;
@@ -66,77 +70,144 @@ body{
 .login:hover {
    color: purple;
 }
-.shopping-cart-login{
+.shopping-cart-login {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.shopping-cart-login a{
+.shopping-cart-login a {
     text-decoration: none;
-    color:gray;
     padding-left:.5em;
-    font-size: 1.3rem;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bolder;
     align-self: center;
 }
-.how-it-works{
-    padding: 2rem;
-}
-
-.intro1{
+/* Home Image  */
+.intro1 {
     width: 100%;
 }
-.works-info{
+/* HOW IT WORKS */
+.how-it-works {
+    padding: 2rem;
+}   
+.works-info {
     text-align: center;
     padding-right: 5rem;
     padding-left: 5rem;
 }
-.order-display{
+.order-display {
     display: flex;
     padding-right: 5%;
     padding-left:5%;
     justify-content: space-evenly;
     
 }
-.order-display div{
-text-align: center;
+.order-display div {
+    text-align: center;
 }
-.order, .shipping, .cancel{
-    width: 90%;text-align: center;;
-    
+.order {
+    text-align: center;
+    border: 3px solid #FECEFF;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    min-width: 15rem;    
 }
-
-.past-box-reveal{
+#order {
+    width: 50%;
+    text-align: center;
+    opacity: 70%;
+    height: 7rem;
+    width: auto;   
+}
+/* PAST BATH SETS */
+.past-box-reveal {
     background-color:#FECEFF;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
 }
-
-.past-bombs{
+.past-bombs {
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: .75fr 1fr .75fr ;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1rem;
     row-gap: 1rem;
+    max-height: 65rem;
 }
-.bomb1{
+.bomb1 {
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-
+    grid-row-start: 1;
+    grid-row-end: 2   
 }
-.bomb6{
+.bomb2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;   
+}
+.bomb3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;   
+}
+.bomb4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.bomb5 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bomb6 {
     grid-column-start: 3;
     grid-column-end: 5;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
 }
-.past-bombs div{
+.past-bombs #bomb{
     text-align: center;
     background-color: white;
-    padding: 3%;
+    padding: 5%;
+    
+}
+.bomb1.div{
+    align-self: center;
+}
+.description{
+    font-size: 1.8rem;
+}
+
+.subscribe{
+    font-family: 'Major Mono Display', monospace; 
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    background-color: rgba(152, 99, 198, 0.7);
+    border: none;
+   
+    margin: 2rem;
+   
+}
+.action-button{
+    display: grid;
+    justify-items: center;
+
 }

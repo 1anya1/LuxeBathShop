@@ -11,6 +11,7 @@ body{
 .cap-font{
     font-family: 'Major Mono Display', monospace; 
     color:rgba(152, 99, 198, 0.7); 
+    text-align: center;
   
 }
 .cap-font2{
@@ -21,6 +22,8 @@ body{
 .inner-text{
     font-size: 2.5rem;
 }
+
+/* HOME PAGE LAYOUT  */
 .grid-container{
     display: grid; 
     grid-template-areas: 
@@ -32,6 +35,11 @@ body{
     grid-template-rows: 7rem 1fr 5rem;
     height: 90%
 }
+.main{
+    grid-area: main;
+}
+
+/* NAVIGATION AND HEADER */
 .header{
     grid-area: header;
     background-color: white; 
@@ -47,7 +55,6 @@ body{
 .cart{
     height: 2.5rem;
     align-self: center;
-
 }
 .menu-links{
     padding-right: 3.5rem;
@@ -61,14 +68,7 @@ body{
 }
 .menu-links a:hover {
     color: purple;
-}
-.login {
-    text-decoration: none;
-    color: gray;
-    font-size: 1rem;
-}
-.login:hover {
-   color: purple;
+    font-size: 1.8rem;
 }
 .shopping-cart-login {
     display: grid;
@@ -81,6 +81,12 @@ body{
     font-size: 1.6rem;
     font-weight: bolder;
     align-self: center;
+}
+.shopping-cart-login a:hover{
+    color: purple;
+    font-size: 1.8rem;
+
+
 }
 /* Home Image  */
 .intro1 {
@@ -99,22 +105,20 @@ body{
     display: flex;
     padding-right: 5%;
     padding-left:5%;
-    justify-content: space-evenly;
-    
 }
-.order-display div {
-    text-align: center;
-}
+
 .order {
-    text-align: center;
     border: 3px solid #FECEFF;
     padding: 1rem 3rem;
     margin: 1rem;
-    min-width: 15rem;    
+    min-width: 15rem;  
+    min-height:  21rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #order {
-    width: 50%;
-    text-align: center;
     opacity: 70%;
     height: 7rem;
     width: auto;   
@@ -122,10 +126,7 @@ body{
 /* PAST BATH SETS */
 .past-box-reveal {
     background-color:#FECEFF;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding: 2rem 3rem;
     
 }
 .past-bombs {
@@ -190,7 +191,15 @@ body{
     align-self: center;
 }
 .description{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+.description-small{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .subscribe{
@@ -210,4 +219,52 @@ body{
     display: grid;
     justify-items: center;
 
+}
+
+/* Ingredients */
+.ingredients{
+    display: grid;
+    grid-template-columns: 1fr .75fr;
+    padding: 2rem 0 2rem 3rem;
+}
+#bath{
+    width: 100%;
+    max-width: 60rem;
+}
+
+
+.bath-tub{
+    justify-items: end;
+    display: grid;
+    padding-top: 2rem;
+    align-items: center;
+  
+}
+.ingredient-logos{
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    max-width: 35rem;
+    margin: 0 auto;
+   
+}
+#ingredients{
+    height: 5rem;
+    width: auto;
+    padding-bottom: 2rem;
+   
+   
+}
+.self-care{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredient-logos div{
+    display: grid;
+    align-items: end;
+    justify-items: center;
 }
